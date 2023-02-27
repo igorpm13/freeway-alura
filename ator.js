@@ -1,6 +1,6 @@
 //Variaveis do Ator
 let xAtor = 85;
-let yAtor = 366;
+let yAtor = 370;
 let altAtor = 30;
 let largAtor = 30;
 let colisao = false;
@@ -33,6 +33,7 @@ function verificaColisao(){
   colisao = collideRectCircle(xCarros[i],yCarros[i],largCarros,altCarros, xAtor, yAtor, 4)
     if(colisao){
       resetPosAtor();
+      somColisao.play();
       if(pontosMaiorQueZero()){
         pontos -= 1;
       }
@@ -49,12 +50,13 @@ function mostraPontos(){
 
 function marcaPontos(){
   if(yAtor <= 0){
-    yAtor = 366;
+    yAtor = 370;
     pontos += 1;
+    somPonto.play();
   }
 }
 function resetPosAtor(){
-  yAtor = 366;
+  yAtor = 370;
 }
 
 function pontosMaiorQueZero(){
@@ -62,5 +64,5 @@ function pontosMaiorQueZero(){
 }
   
 function tocandoBordas(){
-  return yAtor < 366;
+  return yAtor < 370;
 }
