@@ -11,6 +11,8 @@ function draw() {
   movimentoAtor();
   resetPosCarros();
   verificaColisao();
+  mostraPontos();
+  marcaPontos();
   
 }
 
