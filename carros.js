@@ -24,5 +24,5 @@ function resetPosCarros(){
 }
 
 function passouDaTela(xCarro){
-  return xCarros < -50;
+  return xCarro < -50;
 }
