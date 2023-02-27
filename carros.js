@@ -27,14 +27,14 @@ function movimentoCarros(){
   
 }
 function resetPosCarros(){
-  if( xCarros < -50 ){
-    xCarros = inicioCarros ;
+  if( xCarros[0] < -50 ){
+    xCarros[0] = inicioCarros ;
   }
-  if( xCarros < -50 ){
-    xCarros = inicioCarros ;
+  if( xCarros[1] < -50 ){
+    xCarros[1] = inicioCarros ;
   }
-  if( xCarros < -50 ){
-    xCarros = inicioCarros ;
+  if( xCarros[2] < -50 ){
+    xCarros[2] = inicioCarros ;
   }
 
 }
