@@ -6,18 +6,11 @@ let largCarros = 40;
 let velCarros = [ 2, 3, 2.5];
 let inicioCarros = 600;
 
-function invocCarro1(){
-  image(carro1 , xCarros[0] , yCarros[0] , altCarros , largCarros);
+function invocCarros(){
+  for(let i = 0; i < imagemCarros.length; i = i+1){
+    image(imagemCarros[i] , xCarros[i] , yCarros[i] , altCarros , largCarros);
+  }
 }
-
-function invocCarro2(){
-  image(carro2 , xCarros[1] , yCarros[1] , altCarros , largCarros);
-}
-
-function invocCarro3(){
-  image(carro3 , xCarros[2] , yCarros[2] , altCarros , largCarros);
-}
-
 function movimentoCarros(){
   xCarros[0] -= velCarros[0];
 

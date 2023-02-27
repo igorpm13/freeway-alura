@@ -5,9 +5,7 @@ function setup() {
 
 function draw() {
   background(fundo);
-  invocCarro1();
-  invocCarro2();
-  invocCarro3();
+  invocCarros();
   invocAtor();
   movimentoCarros();
   movimentoAtor();
