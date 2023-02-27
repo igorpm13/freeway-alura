@@ -2,7 +2,7 @@
 let yCarros = [ 40, 96, 150 ,210 ,270 ,315];
 let xCarros = [ 600, 600, 600 ,600 ,600 ,600];
 let altCarros = 50;
-let largCarros = 35;
+let largCarros = 40;
 let velCarros = [ 2, 3, 2.5,5 ,3.3 ,2.3];
 let inicioCarros = 600;
 

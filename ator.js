@@ -9,8 +9,8 @@ let pontos = 0;
 let yPontos= 25;
 let xPlacar = 75;
 let yPlacar = 5;
-let largPlacar = 26;
-let altPlacar = 50; 
+let largPlacar = 15;
+let altPlacar = 30; 
 
 function invocAtor(){
   image(ator, xAtor , yAtor , altAtor , largAtor );
@@ -30,32 +30,32 @@ function verificaColisao(){
     for(let i = 0; i < imagemCarros.length; i++){
   colisao = collideRectCircle(xCarros[i],yCarros[i],largCarros,altCarros, xAtor, yAtor, 4)
     if(colisao){
-      colidiu();
+      resetPosAtor();
+      if(pontosMaiorQueZero()){
+        pontos -= 1;
+      }
     }
   }
-}
-
-function colidiu(){
-  yAtor = 370;
-  pontos -= 1;
 }
 
 function mostraPontos(){
   textAlign(CENTER);
   textSize(25);
-  fill(0);
-  rect(xPlacar,yPlacar,altPlacar,largPlacar);
   fill(255,140,0);
   text(pontos, width / 5, yPontos);
 }
 
 function marcaPontos(){
   if(yAtor <= 0){
-    yAtor = 375;
+    yAtor = 370;
     pontos += 1;
   }
-  if(pontos < 0){
-    pontos = 0;
-  }
+}
+function resetPosAtor(){
+  yAtor = 370;
+}
+
+function pontosMaiorQueZero(){
+  return pontos > 0;
 }
   
