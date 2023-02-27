@@ -1,6 +1,6 @@
 //Variaveis do Ator
 let xAtor = 85;
-let yAtor = 375;
+let yAtor = 366;
 let altAtor = 30;
 let largAtor = 30;
 let colisao = false;
@@ -19,10 +19,12 @@ function invocAtor(){
 function movimentoAtor(){
   if(keyIsDown(UP_ARROW)){
      yAtor -= 3;
-     }
+     }  
   if(keyIsDown(DOWN_ARROW)){
-     yAtor +=3;
-     }
+      if(tocandoBordas()){
+      yAtor +=3;
+      }
+    }
 }
 
 function verificaColisao(){
@@ -47,15 +49,18 @@ function mostraPontos(){
 
 function marcaPontos(){
   if(yAtor <= 0){
-    yAtor = 370;
+    yAtor = 366;
     pontos += 1;
   }
 }
 function resetPosAtor(){
-  yAtor = 370;
+  yAtor = 366;
 }
 
 function pontosMaiorQueZero(){
   return pontos > 0;
 }
   
+function tocandoBordas(){
+  return yAtor < 366;
+}
