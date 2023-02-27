@@ -10,6 +10,7 @@ function draw() {
   movimentoCarros();
   movimentoAtor();
   resetPosCarros();
+  verificaColisao();
   
 }
 
