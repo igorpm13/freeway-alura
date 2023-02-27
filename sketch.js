@@ -11,6 +11,7 @@ function draw() {
   invocAtor();
   movimentoCarros();
   movimentoAtor();
+  resetPosCarros();
   
 }
 

@@ -1,51 +1,41 @@
-//Variaveis do carro 1
-let xCarro1 = 600 ;
-let yCarro1 = 40 ;
-let altCarro1 = 50 ;
-let largCarro1 = 40;
-let velCarro1 = 2;
-let inicioCarro1 = 600;
-
-//Variaveis do carro 2
-let xCarro2 = 600 ;
-let yCarro2 = 96 ;
-let altCarro2 = 50 ;
-let largCarro2 = 40;
-let velCarro2 = 3;
-let inicioCarro2 = 600;
-
-//Variaveis do carro 3
-let xCarro3 = 600 ;
-let yCarro3 = 150 ;
-let altCarro3 = 50 ;
-let largCarro3 = 40;
-let velCarro3 = 2.5;
-let inicioCarro3 = 600;
+//Variaveis dos carros
+let yCarros = [ 40, 96, 150];
+let xCarros = [ 600, 600, 600];
+let altCarros = 50;
+let largCarros = 40;
+let velCarros = [ 2, 3, 2.5];
+let inicioCarros = 600;
 
 function invocCarro1(){
-  image(carro1 , xCarro1 , yCarro1 , altCarro1 , largCarro1);
+  image(carro1 , xCarros[0] , yCarros[0] , altCarros , largCarros);
 }
 
 function invocCarro2(){
-  image(carro2 , xCarro2 , yCarro2 , altCarro2 , largCarro2);
+  image(carro2 , xCarros[1] , yCarros[1] , altCarros , largCarros);
 }
 
 function invocCarro3(){
-  image(carro3 , xCarro3 , yCarro3 , altCarro3 , largCarro3);
+  image(carro3 , xCarros[2] , yCarros[2] , altCarros , largCarros);
 }
 
 function movimentoCarros(){
-  xCarro1 -= velCarro1;
-  if( xCarro1 < -35 ){
-    xCarro1 = inicioCarro1 ;
+  xCarros[0] -= velCarros[0];
+
+  xCarros[1] -= velCarros[1];
+  
+  xCarros[2] -= velCarros[2];
+  
+}
+function resetPosCarros(){
+  if( xCarros < -50 ){
+    xCarros = inicioCarros ;
   }
-  xCarro2 -= velCarro2;
-  if( xCarro2 < -35 ){
-    xCarro2 = inicioCarro2 ;
+  if( xCarros < -50 ){
+    xCarros = inicioCarros ;
   }
-  xCarro3 -= velCarro3;
-  if( xCarro3 < -35 ){
-    xCarro3 = inicioCarro3 ;
+  if( xCarros < -50 ){
+    xCarros = inicioCarros ;
   }
+
 }
 
