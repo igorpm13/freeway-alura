@@ -12,14 +12,17 @@ function invocCarros(){
   }
 }
 function movimentoCarros(){
-    for(let j = 0; j < xCarros.length; j += +1 ){
-    xCarros[j] -= velCarros[j]; 
-  }
+  for(let i = 0; i < imagemCarros.length; i += +1){
+  xCarros[i] -= velCarros[i]; 
+}
 }
 function resetPosCarros(){
-  for (let k = 0; k < xCarros.length; k += +1 )
-    if( xCarros[k] < -50 ){
-      xCarros[k] = inicioCarros ;
-    }
+  for(let i = 0; i < imagemCarros.length; i += +1)
+  if(passouDaTela(xCarros[i])){
+    xCarros[i] = inicioCarros ;
+  }
 }
 
+function passouDaTela(xCarro){
+  return xCarros < -50;
+}
