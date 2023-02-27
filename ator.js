@@ -1,6 +1,6 @@
 //Variaveis do Ator
 let xAtor = 85;
-let yAtor = 370;
+let yAtor = 376;
 let altAtor = 30;
 let largAtor = 30;
 let colisao = false;
@@ -50,13 +50,13 @@ function mostraPontos(){
 
 function marcaPontos(){
   if(yAtor <= 0){
-    yAtor = 370;
+    yAtor = 376;
     pontos += 1;
     somPonto.play();
   }
 }
 function resetPosAtor(){
-  yAtor = 370;
+  yAtor = 376;
 }
 
 function pontosMaiorQueZero(){
@@ -64,5 +64,5 @@ function pontosMaiorQueZero(){
 }
   
 function tocandoBordas(){
-  return yAtor < 370;
+  return yAtor < 376;
 }
