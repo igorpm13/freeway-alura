@@ -14,7 +14,6 @@ function draw() {
   verificaColisao();
   mostraPontos();
   marcaPontos();
-  
 }
 
 
