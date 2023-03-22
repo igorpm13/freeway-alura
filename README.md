@@ -9,7 +9,7 @@ Rápida descrição do objetivo de fazer esse projeto
 | :rocket: URL         | https://editor.p5js.org/igorpel13/full/BfyiZRIT6
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://github.com/igorpm13/freeway-alura/blob/master/freeway-alura.png)
+![](https://github.com/igorpm13/freeway-alura/blob/master/freeway-alura.png)#vitrinedev
 
 ## Detalhes do projeto
 Projeto desenvolvido durante aulas de JS em Alura Cursos
