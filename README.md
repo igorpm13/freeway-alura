@@ -6,7 +6,7 @@ Rápida descrição do objetivo de fazer esse projeto
 | -------------  | --- |
 | :sparkles: Nome        | **Jogo Free-Way criado com JavaScript**
 | :label: Tecnologias | javaScript.
-| :rocket: URL         | https://github.com/igorpm13/freeway-alura
+| :rocket: URL         | https://editor.p5js.org/igorpel13/full/BfyiZRIT6
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![](https://github.com/igorpm13/freeway-alura/blob/master/freeway-alura.png)
